@@ -152,6 +152,13 @@ Servidor retorna primeiro o status 301 simbolizando que o endereço não existe 
 
 Retornou o status 405 conforme solicitado e informando que o único método aceito é o GET.
 
+8.7 Rota qualquer para erro 404.
+
+<img width="1510" height="930" alt="image" src="https://github.com/user-attachments/assets/b3a2aa1e-9ae3-4d7d-8ff2-f12aac340086" />
+
+Servidor retorna erro 404 e mensagem de página não encontrada.
+
+
 9. Fontes utilizadas.
 
 9.1 REFERÊNCIAS

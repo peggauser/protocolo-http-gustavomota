@@ -1,8 +1,11 @@
 # protocolo-http-gustavomota
 
 Instituição: Senac Nações Unidas.
+
 Nome: Gustavo Mota de Laura.
+
 Professor: Lucas Corrêa.
+
 Ano: Segundo semestre de Sistemas para Internet.
 
 Exerecício para explicar o funcionamento do protocolo HTTP: o ciclo requisição/resposta, os métodos, os códigos de status e os cabeçalhos.

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npde scr/index.js"
+    "dev": "node src/index.js"
   },
   "repository": {
     "type": "git",

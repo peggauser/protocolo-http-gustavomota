@@ -1,5 +1,3 @@
-
-
 export function route(req, res) {
     if (req.method === "GET" && req.url === "/"){
         res.writeHead(200, {"Content-Type": "text/html;  charset=utf-8"})
@@ -41,6 +39,6 @@ export function route(req, res) {
     }
 
     res.writeHead(404, {"Content-Type": "text/html"})
-    res.end(nafPage("Pagina nao encontrada - 404"))
+    res.end("Pagina nao encontrada - 404")
     return
 }

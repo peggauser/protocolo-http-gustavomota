@@ -26,6 +26,20 @@ export function route(req, res) {
         return
     }
 
+    if (req.url === "/contato"){
+        if (req.method !== "GET") {
+            res.writeHead(405, { "Content-Type": "text/html",
+            "Allow": "GET"
+        });
+        res.end("Pagina de Contato");
+        return;
+
+        }
+        res.writeHead(403, {"Content-Type": "text/html"})
+        res.end("Acesso Negado - 403")
+        return
+    }
+
     res.writeHead(404, {"Content-Type": "text/html"})
     res.end(nafPage("Pagina nao encontrada - 404"))
     return

@@ -20,9 +20,9 @@ export function route(req, res) {
         return
     }
 
-    if (req.method === "GET" && req.url === "/contato"){
-        res.writeHead(200, {"Content-Type": "text/html"})
-        res.end()
+    if (req.method === "GET" && req.url === "/admin"){
+        res.writeHead(403, {"Content-Type": "text/html"})
+        res.end("Acesso Negado - 404")
         return
     }
 

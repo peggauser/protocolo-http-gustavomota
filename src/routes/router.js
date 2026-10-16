@@ -1,4 +1,4 @@
-import {homePage, alunosPage, cursosPage, contatoPage, nafPage} from "./views.js"
+
 
 export function route(req, res) {
     if (req.method === "GET" && req.url === "/"){

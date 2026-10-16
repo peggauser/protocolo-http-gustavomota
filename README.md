@@ -113,3 +113,71 @@ O HTTP trata cada requisição de maneira individual e sem conexão com as anter
 7. Qual a diferença entre HTTP e HTTPS?
 Confesso que fiquei um tempo com essa dúvida, mas a resposta na verdade é bem simples. HTTPS é nada mais nada menos que o HTTP de forma mais segura.
 O HTTP não possui segurança, não possui nenhuma criptografia, os dados enviados em requisições e em respostar ficam vuneráveis, mas no HTTPS isso não ocorre, nele os dados são criptografados antes de serem enviados ao cliente ou ao servidor.
+
+8. Prints de cada rota:
+
+8.1 Rota /admin
+
+<img width="1458" height="929" alt="image" src="https://github.com/user-attachments/assets/1a380ada-96c1-4f55-874b-9c1e618f5f6f" />
+
+Servidor retorna status 403 e informação de acesso negado.
+
+8.2 Rota /
+
+<img width="1463" height="933" alt="image" src="https://github.com/user-attachments/assets/00709074-2bd1-429d-89ec-f2f1c4c80c3e" />
+
+Servidor retorna status 200 (OK).
+
+8.3 Rota /sobre
+
+<img width="1461" height="934" alt="image" src="https://github.com/user-attachments/assets/1da0ba85-7949-4fe5-adba-8572a32ae39f" />
+
+Servidor retorna status 200 (OK).
+
+8.4 Rota /contato
+
+<img width="1455" height="933" alt="image" src="https://github.com/user-attachments/assets/a96947e9-19f1-4f38-aedb-beed28cecee7" />
+
+Servidor retorna status 200 (OK) devido método ter sido o correto (GET).
+
+8.5 Rota /antigo
+
+<img width="1454" height="933" alt="image" src="https://github.com/user-attachments/assets/e82c4b5a-79d1-4d2d-b835-6961128e45fb" />
+
+Servidor retorna primeiro o status 301 simbolizando que o endereço não existe mais e logo após retorna o status 200 (OK) devido o redirecionamento que consta no cabeçalho.
+
+8.6 Rota /contato com POST
+
+<img width="1886" height="1066" alt="image" src="https://github.com/user-attachments/assets/8de19036-5057-4093-89a5-60e838aae39f" />
+
+Retornou o status 405 conforme solicitado e informando que o único método aceito é o GET.
+
+8.7 Rota qualquer para erro 404.
+
+<img width="1510" height="930" alt="image" src="https://github.com/user-attachments/assets/b3a2aa1e-9ae3-4d7d-8ff2-f12aac340086" />
+
+Servidor retorna erro 404 e mensagem de página não encontrada.
+
+
+9. Fontes utilizadas.
+
+9.1 REFERÊNCIAS
+DEVMEDIA. HTTP: requisição e resposta. DevMedia. Disponível em: https://www.devmedia.com.br/http-requisicao-e-resposta/41217#req. Acesso em: 16 out. 2026.
+AMAZON WEB SERVICES (AWS). Qual é a diferença entre HTTP e HTTPS? Amazon Web Services. Disponível em: https://aws.amazon.com/pt/compare/the-difference-between-https-and-http/. Acesso em: 16 out. 2026.
+MOZILLA. Códigos de status de respostas HTTP. MDN Web Docs. Disponível em: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status. Acesso em: 16 out. 2026.
+
+10. Declaração de uso de IA.
+
+10.1 OPENAI. ChatGPT (modelo GPT-6). Ferramenta de inteligência artificial generativa.
+
+Data de uso: 16 out. 2026.
+
+Finalidade: Esclarecimento de dúvidas sobre o protocolo HTTP, métodos de requisição (GET, POST, PUT, PATCH e DELETE), códigos de status, cabeçalhos HTTP e implementação de rotas utilizando Node.js. Auxílio na utilização dos métodos res.writeHead() e res.end(), configuração dos cabeçalhos Location e Allow, realização de testes com curl e análise de requisições no DevTools.
+
+Arquivos impactados: src/index.js, src/routes.js e README.md.
+
+
+
+
+
+

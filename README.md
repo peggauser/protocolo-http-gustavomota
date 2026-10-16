@@ -21,7 +21,8 @@ Essa comunicação é feita por etapas e irei explicar cada uma delas abaixo.
 
 2.1 Toda requisição e resposta contém 3 linhas fundamentais para que funcione corretamente, são elas a linha inicial, cabeçalhos e o corpo. Irei deixar abaixos alguns exemplos de cada uma dessas linhas, exmplos retirados do servidor criado por mim para esse exercício.
 
-4. Tipos de métodos utilizados na comunicação cliente x servidor.
+3. Tipos de métodos utilizados na comunicação cliente x servidor.
+
 3.1 Método GET: É utilizado para solicitar informações, consultar algo no servidor, sem alterar nada dentro do servidor, apenas para consulta.
 
 3.2 Método POST: O nome já indica bem o seu significado, esse método é utilizado para enviar informações ao servidor, enviar informações que o usuário deseja que fiquem no servidor.

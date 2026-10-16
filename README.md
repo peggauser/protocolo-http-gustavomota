@@ -18,9 +18,10 @@ Essa comunicação é feita por etapas e irei explicar cada uma delas abaixo.
 1.5 Quinta etapa - Exibição: Essa é a última etapa de um processo de comunicação entre cliente e servidor, é quando o navegador (cliente) vai interpretar a resposta do servidor para sua requisição e exibir essa resposta para o usuário, essa resposta será exibida como HTML e CSS.
 
 2. Anatomia da requisição e da resposta linha inicial, cabeçalhos e corpo.
+
 2.1 Toda requisição e resposta contém 3 linhas fundamentais para que funcione corretamente, são elas a linha inicial, cabeçalhos e o corpo. Irei deixar abaixos alguns exemplos de cada uma dessas linhas, exmplos retirados do servidor criado por mim para esse exercício.
 
-3. Tipos de métodos utilizados na comunicação cliente x servidor.
+4. Tipos de métodos utilizados na comunicação cliente x servidor.
 3.1 Método GET: É utilizado para solicitar informações, consultar algo no servidor, sem alterar nada dentro do servidor, apenas para consulta.
 
 3.2 Método POST: O nome já indica bem o seu significado, esse método é utilizado para enviar informações ao servidor, enviar informações que o usuário deseja que fiquem no servidor.

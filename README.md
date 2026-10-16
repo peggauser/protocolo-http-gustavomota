@@ -158,17 +158,20 @@ Retornou o status 405 conforme solicitado e informando que o único método acei
 
 Servidor retorna erro 404 e mensagem de página não encontrada.
 
+9. Conclusão
 
-9. Fontes utilizadas.
+Após finalizar essa pesquisa e elaborar esse pequeno servidor percebi que existem bem mais elementos sobre servidores diferentes dos que eu estava vendo em aula, eu por exemplo não tinha ciência que existiam tantos códigos para retorno de status HTTP. Agora consigo compreender a dimensão desse tema, gostei de elaborar essa atividade, mesmo não tento conseguido executar 100% das tarefas solicitadas, visto que faltou a criação de uma rota exibindo o termo na página, ainda sim foi uma processo bom e que pretendo praticar cada vez mais. Consigo perceber agora que faltaram alguns pontos importantes nos exercícios anteriores que eu realizei em sala de aula, se tem algo que eu adicionaria nos meu exercícios anteriores, que eu só descobri através dessa atividade, é a utilização de linhas no cabeçalho, acredito agora que quanto mais detalhes dermos na requisição, melhor será a resposta.
 
-9.1 REFERÊNCIAS
+10. Fontes utilizadas.
+
+10.1 REFERÊNCIAS
 DEVMEDIA. HTTP: requisição e resposta. DevMedia. Disponível em: https://www.devmedia.com.br/http-requisicao-e-resposta/41217#req. Acesso em: 16 out. 2026.
 AMAZON WEB SERVICES (AWS). Qual é a diferença entre HTTP e HTTPS? Amazon Web Services. Disponível em: https://aws.amazon.com/pt/compare/the-difference-between-https-and-http/. Acesso em: 16 out. 2026.
 MOZILLA. Códigos de status de respostas HTTP. MDN Web Docs. Disponível em: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status. Acesso em: 16 out. 2026.
 
-10. Declaração de uso de IA.
+11. Declaração de uso de IA.
 
-10.1 OPENAI. ChatGPT (modelo GPT-6). Ferramenta de inteligência artificial generativa.
+11.1 OPENAI. ChatGPT (modelo GPT-6). Ferramenta de inteligência artificial generativa.
 
 Data de uso: 16 out. 2026.
 

@@ -8,7 +8,7 @@ Professor: Lucas Corrêa.
 
 Ano: Segundo semestre de Sistemas para Internet.
 
-Exerecício para explicar o funcionamento do protocolo HTTP: o ciclo requisição/resposta, os métodos, os códigos de status e os cabeçalhos.
+##Exerecício para explicar o funcionamento do protocolo HTTP: o ciclo requisição/resposta, os métodos, os códigos de status e os cabeçalhos.
 
 1. Cliente e servidor.
 Como ocorre uma comunicação Cliente x Servidor?

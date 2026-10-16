@@ -43,24 +43,38 @@ Como solicitado, irei explicar um pouco sobre esses dois termos utilizados para 
 4.1 Irei listar e explicar alguns dos códigos utilizados para retornar status HTTPS abaixo.
 
 Código 200: Significa que a requisição foi realizada com sucesso, página acessada com sucesso (OK).
+
 Código 201: Um novo recurso foi criado com sucesso.
+
 Código 301: Significa que o que você está buscando foi movido para outro endereço, simboliza uma alteração do recurso, uma alteração do link. Essa alteração foi permanente.
+
 Código 302: É parecido com o 301, mas de forma temporário. Significa que o recurso que você busca foi movido temporariamente para outro endereço.
+
 Código 304: Significa que o servidor (recurso) não foi atualizado ou alterado desde a última vez que você entrou.
+
 Código 400: Esse código que dizer que o recurso não está conseguindo ser processado, mas por conta de um erro na requisição.
+
 Código 401: Bem parecido com o 403, o código 401 simboliza que o cliente está tentando acessar ou solicitar algo, mas sem estar com uma autenticação válida (exemplo: não está logado).
+
 Código 403: Serve como um "não autorizado", você preencheu uma autenticação válida para acessar o que deseja, mas o 403 mostra que o servidor está recusando o acesso, mesmo com o cliente autenticado, parecido com o 401.
+
 Código 404: Possivelmente o código mais famoso existente, simboliza que a página que você está buscando não foi encontrada, mas não especifica o motivo, talvez erro de digitação.
+
 Código 405: Significa que o recurso existente, foi encontrado, mas que você está usando o método errado na requisição.
+
 Código 500: Esse código é um pouco mais curioso, ele representa um erro interno. Requisição correta, método correto, mas por algum motivo houve um erro interno no servidor que não conseguiu processar a requisição.
 
 4.2 Agora que eu já expliquei sobres os códigos, da para perceber um padrão, vou deixar ele mais claro abaixo.
 Como á para perceber, os códigos que começam com o mesmo número (são da mesma família) costumam significar coisas parecidas, ou do mesmo meio pelo menos.
 
 1xx: Códigos informativos, servem para informar apenas, indicam que a requisição ainda está acontecendo.
+
 2xx: Códigos de sucesso, simbolizam que a conexão já acabou e que foi finalizada com sucesso.
+
 3xx: Códigos sobre redirecionamento, significam que o que você está buscando, não se encontra mais lá, seja algo permanente ou não.
+
 4xx: Indica um erro, mas um erro por parte do cliente. Talvez um erro de digitação ou algo assim, mas um erro por parte do cliente, na requisição.
+
 5xx: Também simboliza um erro, mas dessa vez um erro por parte do servidor.
 
 5. Cabeçalhos HTTP.
@@ -69,11 +83,17 @@ São basicamente informação adicionais que são enviadas nas requisições do 
 5.1 Abaixo irei falar um pouco sobre algumas características que são presentes em cabeçalhos.
 
 5.2 Content-Type: Ele informa o tipo do conteúdo que será enviado, ele pode dizer que o conteúdo será em HTML, ou CSS ou até mesmo um outro tipo.
+
 5.3 Content-Length: Serve para avisar qual será o tamanho do conteúdo, ele informa em bytes.
+
 5.4 Location: O nome já entrega um pouco do seu significado, ele serve para infomar o endereço de um recurso, por exemplo, em um código 301, o servidor pode utilizar o que está no Location para ir até a página nova.
+
 5.5 Allow: Esse aqui deixa claro quais métodos são permitidos nessa comunicação, quais métodos poderão ser usados para esse recurso.
+
 5.6 Cache-Control: Tem relação com a memória cache, esse cabeçalho vai definir regras sobre o armazenamento de um conteúdo na memória cache (temporária), por exemplo quanto tempo esse conteúdo poderá ser armazenado nela.
+
 5.7 User-Agent: O nome também já entrega um pouco, esse caso aqui informa qual programa está realizando a requisição, no caso qual navegador está sendo usado por exemplo.
+
 5.8 Accept: Esse aqui é um pouco parecido com o Content-Type, mas o Content-Type é usado para informar qual conteúdo está sendo enviado, o Accept informa qual tipo de conteúdo o cliente aceita receber.
 
 6. HTTP é Stateless, ele não se lembra de requisições anteriores.

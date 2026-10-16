@@ -1,0 +1,24 @@
+{
+  "name": "protocolo-http-gustavomota",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npde scr/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peggauser/protocolo-http-gustavomota.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/peggauser/protocolo-http-gustavomota/issues"
+  },
+  "homepage": "https://github.com/peggauser/protocolo-http-gustavomota#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

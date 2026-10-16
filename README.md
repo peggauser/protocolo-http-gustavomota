@@ -41,43 +41,43 @@ Como solicitado, irei explicar um pouco sobre esses dois termos utilizados para 
 
 3.8 Método Idempotente: Esse método tem relação com quantidade, ele significa que não importa quantas vezes você use esse método indempotente, isso não irá afetar o resultado final, você pode usar ele 100x ou mais, ainda vai retornar o mesmo resultado final sem ocasionar em erros durante o processo. 
 
-4. Códigos de Status HTTP. 
-4.1 Irei listar e explicar alguns dos códigos utilizados para retornar status HTTPS abaixo.
+4. Códigos de Status HTTP.
+Irei listar e explicar alguns dos códigos utilizados para retornar status HTTPS abaixo.
 
-Código 200: Significa que a requisição foi realizada com sucesso, página acessada com sucesso (OK).
+4.1 Código 200: Significa que a requisição foi realizada com sucesso, página acessada com sucesso (OK).
 
-Código 201: Um novo recurso foi criado com sucesso.
+4.2 Código 201: Um novo recurso foi criado com sucesso.
 
-Código 301: Significa que o que você está buscando foi movido para outro endereço, simboliza uma alteração do recurso, uma alteração do link. Essa alteração foi permanente.
+4.3 Código 301: Significa que o que você está buscando foi movido para outro endereço, simboliza uma alteração do recurso, uma alteração do link. Essa alteração foi permanente.
 
-Código 302: É parecido com o 301, mas de forma temporário. Significa que o recurso que você busca foi movido temporariamente para outro endereço.
+4.4 Código 302: É parecido com o 301, mas de forma temporário. Significa que o recurso que você busca foi movido temporariamente para outro endereço.
 
-Código 304: Significa que o servidor (recurso) não foi atualizado ou alterado desde a última vez que você entrou.
+4.5 Código 304: Significa que o servidor (recurso) não foi atualizado ou alterado desde a última vez que você entrou.
 
-Código 400: Esse código que dizer que o recurso não está conseguindo ser processado, mas por conta de um erro na requisição.
+4.6 Código 400: Esse código que dizer que o recurso não está conseguindo ser processado, mas por conta de um erro na requisição.
 
-Código 401: Bem parecido com o 403, o código 401 simboliza que o cliente está tentando acessar ou solicitar algo, mas sem estar com uma autenticação válida (exemplo: não está logado).
+4.7 Código 401: Bem parecido com o 403, o código 401 simboliza que o cliente está tentando acessar ou solicitar algo, mas sem estar com uma autenticação válida (exemplo: não está logado).
 
-Código 403: Serve como um "não autorizado", você preencheu uma autenticação válida para acessar o que deseja, mas o 403 mostra que o servidor está recusando o acesso, mesmo com o cliente autenticado, parecido com o 401.
+4.8 Código 403: Serve como um "não autorizado", você preencheu uma autenticação válida para acessar o que deseja, mas o 403 mostra que o servidor está recusando o acesso, mesmo com o cliente autenticado, parecido com o 401.
 
-Código 404: Possivelmente o código mais famoso existente, simboliza que a página que você está buscando não foi encontrada, mas não especifica o motivo, talvez erro de digitação.
+4.9 Código 404: Possivelmente o código mais famoso existente, simboliza que a página que você está buscando não foi encontrada, mas não especifica o motivo, talvez erro de digitação.
 
-Código 405: Significa que o recurso existente, foi encontrado, mas que você está usando o método errado na requisição.
+4.10 Código 405: Significa que o recurso existente, foi encontrado, mas que você está usando o método errado na requisição.
 
-Código 500: Esse código é um pouco mais curioso, ele representa um erro interno. Requisição correta, método correto, mas por algum motivo houve um erro interno no servidor que não conseguiu processar a requisição.
+4.11 Código 500: Esse código é um pouco mais curioso, ele representa um erro interno. Requisição correta, método correto, mas por algum motivo houve um erro interno no servidor que não conseguiu processar a requisição.
 
-4.2 Agora que eu já expliquei sobres os códigos, da para perceber um padrão, vou deixar ele mais claro abaixo.
+4.12 Agora que eu já expliquei sobres os códigos, da para perceber um padrão, vou deixar ele mais claro abaixo.
 Como á para perceber, os códigos que começam com o mesmo número (são da mesma família) costumam significar coisas parecidas, ou do mesmo meio pelo menos.
 
-1xx: Códigos informativos, servem para informar apenas, indicam que a requisição ainda está acontecendo.
+4.13 1xx: Códigos informativos, servem para informar apenas, indicam que a requisição ainda está acontecendo.
 
-2xx: Códigos de sucesso, simbolizam que a conexão já acabou e que foi finalizada com sucesso.
+4.14 2xx: Códigos de sucesso, simbolizam que a conexão já acabou e que foi finalizada com sucesso.
 
-3xx: Códigos sobre redirecionamento, significam que o que você está buscando, não se encontra mais lá, seja algo permanente ou não.
+4.15 3xx: Códigos sobre redirecionamento, significam que o que você está buscando, não se encontra mais lá, seja algo permanente ou não.
 
-4xx: Indica um erro, mas um erro por parte do cliente. Talvez um erro de digitação ou algo assim, mas um erro por parte do cliente, na requisição.
+4.16 4xx: Indica um erro, mas um erro por parte do cliente. Talvez um erro de digitação ou algo assim, mas um erro por parte do cliente, na requisição.
 
-5xx: Também simboliza um erro, mas dessa vez um erro por parte do servidor.
+4.17 5xx: Também simboliza um erro, mas dessa vez um erro por parte do servidor.
 
 5. Cabeçalhos HTTP.
 São basicamente informação adicionais que são enviadas nas requisições do cliente e nas respostas do servidor. Servem para informar características, seja de como será feita a comunicação, dados do que será enviado e recebido entre outras características.
